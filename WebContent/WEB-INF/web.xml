@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>config_context_1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>Context</param-name>
+    <param-value>&quot;from Context&quot;</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>student</display-name>
+    <servlet-name>student</servlet-name>
+    <servlet-class>master.student</servlet-class>
+    <init-param>
+      <param-name>Config</param-name>
+      <param-value>&quot;from Config&quot;</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student</servlet-name>
+    <url-pattern>/student</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>student1</display-name>
+    <servlet-name>student1</servlet-name>
+    <servlet-class>master.student1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student1</servlet-name>
+    <url-pattern>/student1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>servlet_to_servlet_1</display-name>
+    <servlet-name>servlet_to_servlet_1</servlet-name>
+    <servlet-class>master.servlet_to_servlet_1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet_to_servlet_1</servlet-name>
+    <url-pattern>/servlet_to_servlet_1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>servlet_to_servlet_2</display-name>
+    <servlet-name>servlet_to_servlet_2</servlet-name>
+    <servlet-class>master.servlet_to_servlet_2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet_to_servlet_2</servlet-name>
+    <url-pattern>/servlet_to_servlet_2</url-pattern>
+  </servlet-mapping>
+</web-app>
